@@ -1,0 +1,85 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="./styles/style.css" />
+    <script defer src="./scripts/script.js"></script>
+    <title>Cloud Soft House</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Encode+Sans:wght@300;400;600;700;800&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+</head>
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="col-12">
+                <h1 class="font--35 fw-normal mb-3">OFERTY DEALERÓW</h1>
+            </div>
+        </div>
+        <div class="row mb-2">
+            <div class="col-12">
+                <div class="filters d-flex justify-content-between align-items-center">
+                    <div class="filters--left d-flex gap-1 gap-xl-3 flex-column flex-xl-row">
+                        <div class="filters--checkbox filters--checkbox__available">
+                            <label for="available" class="filters-rwd font--14 line-height--17">DOSTĘPNE
+                                <input value="available" id="available" type="checkbox">
+                                <span class="checkmark"></span>
+                            </label>
+                        </div>
+                        <div class="filters--checkbox filters--checkbox__favourites">
+                            <label for="favourites" class="filters-rwd font--14 line-height--17">ULUBIONE
+                                <input value="favourites" id="favourites" type="checkbox">
+                                <span class="checkmark"></span>
+                            </label>
+                        </div>
+                        <div class="filters--checkbox filters--checkbox__box">
+                            <label for="autobox" class="filters-rwd font--14 line-height--17">SKRZYNIA AUTOMATYCZNA
+                                <input value="autobox" id="autobox" type="checkbox">
+                                <span class="checkmark"></span>
+                            </label>
+                        </div>
+                    </div>
+                    <div class="filters--right d-flex flex-column-reverse flex-lg-row gap-1 gap-lg-3">
+                        <div class="select-sort">
+                            <select id="price-sort" class="filters-rwd font--14">
+                                <option value="">SORTOWANIE</option>
+                                <option value="asc">CENA ROSNĄCO</option>
+                                <option value="desc">CENA MALEJĄCO</option>
+                            </select>
+                        </div>
+                        <div class="select-sort">
+                            <select id="city-sort" class="filters-rwd font--14">
+                                <option value="">WYBIERZ MIASTO</option>
+                            </select>
+                        </div>
+                        <div class="search-input">
+                            <input type="text" class="filters-rwd font--14" id='search' placeholder="SZUKAJ"/>
+                            <svg fill="#363636" version="1.1" id="mag-glass" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" 
+                            width="15px" height="15px" viewBox="0 0 390.704 390.704"
+                            xml:space="preserve">
+                                <g>
+                                    <g>
+                                        <path d="M379.711,326.556L265.343,212.188c30.826-54.189,23.166-124.495-23.001-170.663c-55.367-55.366-145.453-55.366-200.818,0
+                                            c-55.365,55.366-55.366,145.452,0,200.818c46.167,46.167,116.474,53.827,170.663,23.001l114.367,114.369
+                                            c14.655,14.655,38.503,14.654,53.157,0C394.367,365.059,394.368,341.212,379.711,326.556z M214.057,214.059
+                                            c-39.77,39.771-104.479,39.771-144.25,0c-39.77-39.77-39.77-104.48,0-144.25c39.771-39.77,104.48-39.77,144.25,0
+                                            C253.828,109.579,253.827,174.29,214.057,214.059z"/>
+                                    </g>
+                                </g>
+                            </svg>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row vehicle-list">
+        </div>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
+</body>
+</html>

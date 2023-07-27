@@ -1,0 +1,24 @@
+@import "./colors";
+.text{
+  &--gray{
+      color: color($colors, dark-gray);
+  }
+  &--white{
+      color: color($colors, white);
+  }
+}
+
+.line-height {
+    @for $i from 15 through 30 {
+      &--#{$i} {
+        line-height: #{$i}px !important;
+      }
+    }
+  }
+.font {
+    @for $i from 5 through 30 {
+      &--#{$i} {
+        font-size: #{$i}px !important;
+      }
+    }
+  }

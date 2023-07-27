@@ -1,0 +1,12 @@
+$colors: (
+  dark-gray: #363636,
+  light-gray: #979797,
+  button-gray: #e9e9e9,
+  white: #ffffff,
+  black: #000000
+);
+
+@function color($palette, $key) {
+    @return map_get($palette, $key)
+  }
+  
